@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--gap-xs);
+  color: var(--black);
+  background-color: var(--yellow);
+  border-radius: var(--border-radius-m);
+  position: absolute;
+  bottom: 80px;
+  width: calc(100% - var(--gap-m) * 2);
+  overflow: scroll;
+  padding: var(--gap-m);
+
+  .user {
+    cursor: pointer;
+    border-radius: var(--border-radius-s);
+
+    button {
+      padding: var(--gap-xs) var(--gap-s);
+      width: 100%;
+    }
+
+    &:hover,
+    &:focus-within {
+      background-color: var(--black);
+      color: var(--white);
+    }
+  }
+}

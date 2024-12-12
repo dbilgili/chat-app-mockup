@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--gap-l);
+  height: 100vh;
+  background-color: var(--beige);
+
+  .wrapper {
+    display: flex;
+    max-width: 1200px;
+    column-gap: var(--gap-s);
+    width: 100%;
+    height: 80%;
+    padding: var(--gap-m);
+  }
+}

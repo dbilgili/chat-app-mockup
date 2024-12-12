@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: var(--black);
+  border-radius: var(--border-radius-l);
+  overflow: hidden;
+
+  .instructionMessage {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--gap-s);
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    color: var(--white);
+    font-size: var(--font-18);
+    color: var(--white);
+  }
+
+  .miniInstructionMessage {
+    font-size: var(--font-14);
+    color: var(--white);
+    background-color: var(--gray);
+    border-radius: var(--border-radius-m);
+    margin: var(--gap-s) auto;
+    padding: var(--gap-s) var(--gap-m);
+    white-space: pre;
+  }
+
+  .messages {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: auto;
+    margin-top: var(--gap-m);
+
+    & > :first-child {
+      margin-top: auto;
+    }
+  }
+}

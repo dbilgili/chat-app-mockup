@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  align-items: center;
+  column-gap: var(--gap-s);
+  width: 100%;
+  background-color: var(--dark-gray);
+  border-radius: var(--border-radius-m);
+  padding: var(--gap-xs);
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: var(--white);
+
+  &:focus-visible {
+    outline: 1px solid var(--yellow);
+    outline-offset: -1px;
+  }
+
+  &.selected {
+    background-color: var(--yellow);
+    color: var(--black);
+
+    &:hover {
+      background-color: var(--yellow);
+    }
+  }
+
+  &:hover {
+    background-color: var(--gray);
+  }
+
+  .avatar {
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-14);
+    font-weight: bold;
+    color: var(--white);
+  }
+
+  .fullName {
+    font-size: var(--font-14);
+    font-weight: bold;
+  }
+}

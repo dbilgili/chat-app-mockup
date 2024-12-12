@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  column-gap: var(--gap-s);
+  margin: var(--gap-m);
+
+  input {
+    flex: 1;
+    border-radius: var(--border-radius-m);
+    height: 35px;
+    padding: 0 var(--gap-m);
+    background-color: var(--white);
+
+    &:focus-visible {
+      border: 2px solid var(--green);
+    }
+  }
+
+  .sendButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--green);
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:enabled:hover {
+      background-color: var(--light-green);
+    }
+
+    &:focus-visible {
+      background-color: var(--light-green);
+    }
+
+    &:disabled {
+      cursor: initial;
+      opacity: 0.5;
+    }
+
+    svg {
+      transform: translateX(3px);
+    }
+  }
+}
